@@ -1,0 +1,80 @@
+*,
+*::before,
+*:after {
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    direction: rtl;
+    margin:0;
+    font-size: 1rem;
+    font-family: OpenSans;
+    text-align: center;
+}
+
+.wrapper {
+    max-width:408px;
+    margin: 0 auto;
+    border:1px solid black;
+}
+.title {
+    background: #16254f;
+    color: #fff;
+
+}
+
+/* Typography */
+
+h1,
+h2 {
+    font-size: 1rem;
+    line-height: 30px;
+    margin-right: .5em;
+    text-align: right;
+}
+p {
+    margin-right: .5em;
+    font-size: .91rem;
+    text-align: right;
+}
+
+
+/* page styles */
+.fa-star {
+    font-size: 24px;
+}
+.star-ratings {
+    display:flex;
+    justify-content:space-between;
+    margin-left: 1em;
+}
+.star-ratings:hover,
+.star-ratings:focus {
+
+}
+
+.line {
+    border: 0.5px solid black;
+    width: 340px;
+    height: 1px;
+    margin-right: 15px;
+}
+.comment-area {
+    text-align: right;
+}
+
+.submit {
+    background: #16254f;
+    height:42px;
+    width: 200px;
+    border-radius: 21px;
+}
+
+.numbers {
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    top: -4px;
+    left: 21px;
+}

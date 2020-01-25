@@ -1,0 +1,75 @@
+body {
+    direction:rtl;
+    text-align: center;
+}
+.modal-dialog {
+    margin: 0;
+}
+.modal {
+    width: 408px;
+    height: 860px;
+    border-radius:10px;
+    box-shadow:0 2px 4px 0 rgba(195, 194, 194, 0.7);
+    background:#ffffff;
+    margin: 0 auto;
+}
+.modal-header {
+    width: 408px;
+    height: 46px;
+    background-color: #16254f;
+    color:#fff;
+    border: none;
+}
+.modal-body {
+    text-align:right;
+}
+.modal-body > h4 {
+    margin-bottom: 32px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #16254f;
+    font-family: OpenSans, sans-serif;
+    font-style: normal;
+}
+.modal-title {
+    font-size:16px;
+    line-height:1;
+}
+.close {
+    display:contents;
+}
+.close span {
+    font-size:18px;
+    font-weight:100;
+    color:#fff;
+}
+.textarea-control {
+    border:none;
+    resize:none;
+    outline:none;
+}
+.custom-file-input {
+    display:none;
+
+}
+.modal-title .comment{
+    margin-bottom:0;
+}
+.fa-image {
+    margin-left: 10px;
+    font-size: 24px;
+}
+.line {
+    border: 0.5px solid #ccc;
+    margin: 12px 0;
+}
+.modal-footer {
+    justify-content:center;
+    flex-direction:column;
+}
+.modal-footer .btn-primary {
+    background:#16254f;
+    width: 200px;
+    border-radius: 21px;
+    margin-bottom: 31px;
+}
