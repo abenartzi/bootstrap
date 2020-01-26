@@ -95,8 +95,19 @@ p {
 .facebook {
     width: 92px;
     height:31px;
-    background:#16254f;
+    background:#39579E;
     border-radius:5px;
+    color: #fff;
+}
+.facebook img {
+    width: 31px;
+    position: absolute;
+    left: 0px;
+    border-radius: 5px;
+
+}
+.facebook span {
+    vertical-align: middle;
 }
 .col-sm-5 {
     padding-right: 5px;
@@ -146,7 +157,7 @@ p {
 .rating span {
     position: relative;
     top: -6px;
-    left: -16.5px;
+    left: -16px;
     font-size: 9px;
     font-weight: 900;
 }
@@ -183,5 +194,5 @@ input.star:checked ~ label.star:before {
 
 label.star:before {
     content:'\f006';
-    font-family: FontAwesome;
+    font-family: FontAwesome, sans-serif;
 }

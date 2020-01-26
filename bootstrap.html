@@ -15,7 +15,6 @@
     <title>Bootstrap</title>
 </head>
 <body>
-    <script src="script.js"></script>
 
     <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> דירוג העסק
     </button>
@@ -29,7 +28,7 @@
                         <span>X</span>
                     </button>
                 </div>
-                <form action="#" class="form-control" method="post">
+                <form action="thankyou.html" class="form-control" method="post" id="form">
                     <div class="modal-body">
                         <h4 class="modal-title">עד כמה היית מרוצה מהעסק?</h4>
 
@@ -178,7 +177,10 @@
 
                         <div class="line"></div>
                         <div class="row sign-in">
-                            <div class="facebook col-sm-3"></div>
+                            <div class="facebook col-sm-3">
+                                <img src="images/fb.png" alt="facebook logo">
+                                <span>Login</span>
+                            </div>
                             <div class="col-sm-5">
                                 <input
                                     type="text"
@@ -199,7 +201,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button class="btn btn-primary" type="submit">שיתוף תגובה</button>
+                        <button class="btn btn-primary" type="submit" >שיתוף תגובה</button>
                         <button class="btn" data-dismiss="modal">ביטול</button>
                     </div>
 

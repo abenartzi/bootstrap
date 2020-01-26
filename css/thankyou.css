@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Almon, sans-serif;
+}
+.wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+}
+img {
+    margin-top: 5em;
+    width: 30%;
+}
+
+.thanks {
+    margin: 5em auto;
+    width: 100%;
+}
+
+.improve {
+    font-size:2rem;
+
+}
+.improve p {
+    max-width: 8em;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    font-size:2rem;
+    font-weight: bold;
+}
+
+h1 {
+    background:#1E5394;
+    color: #fff;
+    border-radius: 7px;
+    padding:0.5em;
+}
+h2 {
+    margin: 1em auto;
+    color: #1E5394;
+}
+.thanks h2::after {
+    content:'';
+    display:block;
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+    margin: 1em auto;
+}
+.btn {
+    margin-top:3em;
+    width: 100%;
+    font-size: 1.5rem;
+}
