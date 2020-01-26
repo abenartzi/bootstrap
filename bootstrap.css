@@ -92,23 +92,23 @@ p {
 .sign-in {
     margin-top:29px;
 }
-.facebook {
-    width: 92px;
-    height:31px;
-    background:#39579E;
-    border-radius:5px;
-    color: #fff;
-}
-.facebook img {
-    width: 31px;
-    position: absolute;
-    left: 0px;
-    border-radius: 5px;
+/*.facebook {*/
+/*    width: 92px;*/
+/*    height:31px;*/
+/*    background:#39579E;*/
+/*    border-radius:5px;*/
+/*    color: #fff;*/
+/*}*/
+/*.facebook img {*/
+/*    width: 31px;*/
+/*    position: absolute;*/
+/*    left: 0px;*/
+/*    border-radius: 5px;*/
 
-}
-.facebook span {
-    vertical-align: middle;
-}
+/*}*/
+/*.facebook span {*/
+/*    vertical-align: middle;*/
+/*}*/
 .col-sm-5 {
     padding-right: 5px;
 }

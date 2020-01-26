@@ -15,7 +15,8 @@
     <title>Bootstrap</title>
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=296046578021469&autoLogAppEvents=1"></script>
     <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> דירוג העסק
     </button>
 
@@ -178,8 +179,10 @@
                         <div class="line"></div>
                         <div class="row sign-in">
                             <div class="facebook col-sm-3">
-                                <img src="images/fb.png" alt="facebook logo">
-                                <span>Login</span>
+
+                                <div class="fb-login-button" data-width="120px" data-size="small"
+                                     data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="false"></div>
+
                             </div>
                             <div class="col-sm-5">
                                 <input
@@ -218,7 +221,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <scrip src="bootstrap.js"></scrip>
 </body>
 </html>
 

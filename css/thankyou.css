@@ -15,7 +15,7 @@ body {
 }
 img {
     margin-top: 5em;
-    width: 30%;
+    width: 75%;
 }
 
 .thanks {
@@ -61,4 +61,15 @@ h2 {
     margin-top:3em;
     width: 100%;
     font-size: 1.5rem;
+}
+.btn a {
+    color:#fff;
+    text-decoration: none;
+}
+
+@media (max-width:500px) {
+    img {
+        margin-top: 2em;
+        width:100%
+    }
 }
