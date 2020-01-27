@@ -146,6 +146,9 @@ body {
     margin-bottom: 34px;
 }
 
+.cancel-btn {
+    background:transparent;
+}
 
 /* Star rating */
 
@@ -182,15 +185,7 @@ body {
     cursor:pointer;
     font-size: 26px;
 }
-[type="radio"]:checked + i:before {
-    content:'\f005';
-    color: #16254f;
-}
-[type="radio"]:checked + i:before{
-    content:'\f005';
-    color: #16254f;
-    font-size: 24px;
-}
+
 .star {
     font-size:27px;
     margin: 0;
@@ -199,9 +194,13 @@ input.star:checked ~ label.star:before {
     content:'\f005';
     color:black;
     transition: all 0.2s;
+
 }
 
 label.star:before {
     content:'\f006';
     font-family: FontAwesome, sans-serif;
+
 }
+
+
