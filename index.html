@@ -1,178 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Bezeq</title>
-    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/fade6e7b35.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap</title>
 </head>
 <body>
+    <div id="fb-root"></div>
 
-    <div class="wrapper">
-        <div class="title">
-            <h1>דירוג העסק</h1>
-        </div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=296046578021469&autoLogAppEvents=1"></script>
 
-        <section class="ratings">
-            <div class="subtitle">
-                <h2>עד כמה היית מרוצה מהעסק?</h2>
-            </div>
+    <button class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#myModal"> דירוג העסק
+    </button>
 
-            <div class="star-ratings">
-                <p>שירות מקצועי</p>
-                <div class="stars">
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">1</span>
-                    </span>
-
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">2</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">3</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">4</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">5</span>
-                    </span>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">דירוג העסק</h1>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>X</span>
+                    </button>
                 </div>
-            </div>
-            <div class="star-ratings">
-                <p>מחיר ממוצע </p>
-                <div class="stars">
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">1</span>
-                    </span>
 
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">2</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">3</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">4</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">5</span>
-                    </span>
-                </div>
-            </div>
-            <div class="star-ratings">
-                <p>מקצועיות הצוות</p>
-                <div class="stars">
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">1</span>
-                    </span>
+                <form action="thankyou.html" class="form-control" method="post" id="form">
+                    <div class="modal-body">
+                        <h4 class="modal-title">עד כמה היית מרוצה מהעסק?</h4>
 
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">2</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">3</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">4</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">5</span>
-                    </span>
-                </div>
-            </div>
-            <div class="star-ratings">
-                <p>זמינות בעל העסק</p>
-                <div class="stars">
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">1</span>
-                    </span>
+                        <div class="row ratings-title">
+                            <div class="col-xs-6 ">
+                                <div class="mr-3">שירות מקצועי</div>
+                            </div>
 
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">2</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">3</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">4</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">5</span>
-                    </span>
-                </div>
-            </div>
-            <div class="star-ratings">
-                <p>התרשמות כללית</p>
-                <div class="stars">
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">1</span>
-                    </span>
+                            <div class="col-xs-5 rating">
 
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">2</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">3</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">4</span>
-                    </span>
-                    <span><i class="far fa-star"></i>
-                        <span class="numbers">5</span>
-                    </span>
-                </div>
-            </div>
-        </section>
+                                    <input type="radio" name="star-service" class="star" id="star1">
+                                    <label for="star1" class="star"><span>5</span></label>
 
-        <div class="line"></div>
+                                    <input type="radio" name="star-service" class="star" id="star2" >
+                                    <label for="star2" class="star"><span>4</span></label>
 
-        <section class="comment-area">
-            <div>
-                <h2>כמה מילים על החוויה שלך עם העסק</h2>
-                <textarea
-                        name="comment"
-                        id="comment"
-                        placeholder="יש להקליד כאן..."
+                                    <input type="radio" name="star-service" class="star" id="star3">
+                                    <label for="star3" class="star"><span>3</span></label>
+
+                                    <input type="radio" name="star-service" class="star" id="star4">
+                                    <label for="star4" class="star"><span>2</span></label>
+
+                                    <input type="radio" name="star-service" class="star" id="star5">
+                                    <label for="star5" class="star"><span>1</span></label>
+
+                            </div>
+                        </div>
+
+                        <div class="row ratings-title">
+                            <div class="col-xs-6 ">
+                                <div class="mr-3">מחיר ממוצע</div>
+                            </div>
+
+                            <div class="col-xs-5 rating">
+
+                                <input type="radio" name="star-price" class="star" id="star6">
+                                <label for="star6" class="star"><span>5</span></label>
+
+                                <input type="radio" name="star-price" class="star" id="star7" >
+                                <label for="star7" class="star"><span>4</span></label>
+
+                                <input type="radio" name="star-price" class="star" id="star8">
+                                <label for="star8" class="star"><span>3</span></label>
+
+                                <input type="radio" name="star-price" class="star" id="star9">
+                                <label for="star9" class="star"><span>2</span></label>
+
+                                <input type="radio" name="star-price" class="star" id="star10">
+                                <label for="star10" class="star"><span>1</span></label>
+
+                            </div>
+                        </div>
+
+                        <div class="row ratings-title">
+                            <div class="col-xs-6 ">
+                                <div class="mr-3">מקצועיות השירות</div>
+                            </div>
+                            <div class="col-xs-5 rating">
+
+                                <input type="radio" name="star-pro" class="star" id="star11">
+                                <label for="star11" class="star"><span>5</span></label>
+
+                                <input type="radio" name="star-pro" class="star" id="star12" >
+                                <label for="star12" class="star"><span>4</span></label>
+
+                                <input type="radio" name="star-pro" class="star" id="star13">
+                                <label for="star13" class="star"><span>3</span></label>
+
+                                <input type="radio" name="star-pro" class="star" id="star14">
+                                <label for="star14" class="star"><span>2</span></label>
+
+                                <input type="radio" name="star-pro" class="star" id="star15">
+                                <label for="star15" class="star"><span>1</span></label>
+
+                            </div>
+
+                        </div>
+                        <div class="row ratings-title">
+                            <div class="col-xs-6 ">
+                                <div class="mr-3">זמינות בעל העסק</div>
+                            </div>
+                            <div class="col-xs-5 rating">
+
+                                <input type="radio" name="star-time" class="star" id="star16">
+                                <label for="star16" class="star"><span>5</span></label>
+
+                                <input type="radio" name="star-time" class="star" id="star17" >
+                                <label for="star17" class="star"><span>4</span></label>
+
+                                <input type="radio" name="star-time" class="star" id="star18">
+                                <label for="star18" class="star"><span>3</span></label>
+
+                                <input type="radio" name="star-time" class="star" id="star19">
+                                <label for="star19" class="star"><span>2</span></label>
+
+                                <input type="radio" name="star-time" class="star" id="star20">
+                                <label for="star20" class="star star5"><span>1</span></label>
+
+                            </div>
+                        </div>
+                        <div class="row ratings-title impression">
+                            <div class="col-xs-6 ">
+                                <div class="mr-3">התרשמות כללית</div>
+                            </div>
+                            <div class="col-xs-5 rating">
+
+                                    <input type="radio" name="star-impression" class="star" id="star21">
+                                    <label for="star21" class="star"><span>5</span></label>
+
+                                    <input type="radio" name="star-impression" class="star" id="star22" >
+                                    <label for="star22" class="star"><span>4</span></label>
+
+                                    <input type="radio" name="star-impression" class="star" id="star23">
+                                    <label for="star23" class="star"><span>3</span></label>
+
+                                    <input type="radio" name="star-impression" class="star" id="star24">
+                                    <label for="star24" class="star star4"><span>2</span></label>
+
+                                    <input type="radio" name="star-impression" class="star" id="star25">
+                                    <label for="star25" class="star star5"><span>1</span></label>
+
+                            </div>
+                        </div>
+
+
+                        <div class="comment">
+                            <h4 class="modal-title">כמה מילים על החוויה שלך עם העסק</h4>
+                        </div>
+                        <textarea rows="5"
+                                  cols="40"
+                                  name="comment"
+                                  maxlength="188"
+                                  id="comment"
+                                  class="textarea-control"
+                                  placeholder="יש להקליד כאן..."
                         ></textarea>
+
+
+                        <div class="file-upload">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label for="customFile" class="col-form-label">
+                                <div class="d-inline-flex picture-element">
+                                    <i class="fas fa-image"></i>
+                                    <div>הוספת תמונות</div>
+                                </div>
+                            </label>
+                        </div>
+
+
+                        <div class="row sign-in">
+                            <div class="facebook col-sm-3">
+                                <div class="fb-login-button"
+                                     data-width="120px"
+                                     data-size="small"
+                                     data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="false"></div>
+
+                            </div>
+                            <div class="col-sm-5 pr-0">
+                                <input
+                                    type="text"
+                                    id="name"
+                                    class="custom-file"
+                                    placeholder="שם מלא"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row terms">
+                        <div class="col-sm-1">
+                            <input type="checkbox" class="form-check" required>
+                        </div>
+                        <div class="col-sm-11 text-sm-right mr-0 p-0">
+                            <span>קראתי את <a href="#">תנאי השימוש</a> והם מקובלים עלי</span>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="submit" >שיתוף תגובה</button>
+                        <button class="btn" data-dismiss="modal">ביטול</button>
+                    </div>
+
+                </form>
             </div>
-        </section>
-        <div class="line"></div>
-        <section class="image-upload">
-<!--            image upload     -->
-            <p>הוספת תמונות</p>
-        </section>
-        <div class="line"></div>
-
-        <section class="">
-            <form class=" ">
-
-                     <input
-                            type="text"
-                            class="name"
-                            id="name"
-                            placeholder="שם מלא"
-                            >
-                        <input
-                            type="checkbox"
-                            name="checkbox"
-                            id="checkbox"
-
-                    >
-                    <p>קראתי את <a href="#">תנאי השימוש</a> והם מקובלים עלי</p>
-                        <input
-                        id="submit"
-                        class="submit btn btn-primary"
-                        type="submit"
-                        name="submit"
-                        value="שיתוף תגובה">
-            </form>
-            <a href="#">ביטול</a>
-        </section>
+        </div>
 
     </div>
 
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts/bootstrap.js"></script>
+
 </body>
 </html>
+

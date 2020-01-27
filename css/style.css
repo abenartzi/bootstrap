@@ -1,80 +1,207 @@
 *,
 *::before,
 *:after {
-   box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
-    direction: rtl;
-    margin:0;
-    font-size: 1rem;
-    font-family: OpenSans;
+    direction:rtl;
     text-align: center;
+    font-family: 'Open Sans',sans-serif;
 }
 
-.wrapper {
-    max-width:408px;
+.modal-dialog {
+    margin: 0;
+}
+.modal {
+    width: 408px;
+    height: 860px;
+    border-radius:10px;
+    box-shadow:0 2px 4px 0 rgba(195, 194, 194, 0.7);
+    background:#ffffff;
     margin: 0 auto;
-    border:1px solid black;
 }
-.title {
-    background: #16254f;
-    color: #fff;
+.modal-header {
+    width: 408px;
+    height: 46px;
+    background-color: #16254f;
+    color:#fff;
+    border: none;
+}
+.modal-body {
+    text-align:right;
+}
+.modal-body > h4 {
+    margin-bottom: 29px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #16254f;
+    font-family: OpenSans, sans-serif;
+    font-style: normal;
+}
+.form-control {
+    border: none;
+}
+
+/* first section spacing */
+
+.impression{
+    margin-bottom: 29px;
+}
+.impression::after {
+    display: block;
+    content: ' ';
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* First line break */
+
+.modal-title {
+    font-size:16px;
+    line-height:1;
+}
+
+/* X button - top left area */
+
+.close {
+    display:contents;
+}
+.close span {
+    font-size:18px;
+    font-weight:100;
+    color:#fff;
+}
+.textarea-control {
+    border:none;
+    resize:none;
+    outline:none;
+    height:104px;
+}
+
+.custom-file-input {
+    display:none;
 
 }
 
-/* Typography */
+/* Line breaks before and after file upload area */
 
-h1,
-h2 {
-    font-size: 1rem;
-    line-height: 30px;
-    margin-right: .5em;
-    text-align: right;
+.file-upload::before,
+.file-upload::after{
+    display: block;
+    content: ' ';
+    border-top: 1px solid #ccc;
+    width: 100%;
 }
-p {
-    margin-right: .5em;
-    font-size: .91rem;
-    text-align: right;
+.comment h4{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.27;
+    color: #16254f;
 }
 
-
-/* page styles */
-.fa-star {
+.fa-image {
+    margin-left: 10px;
     font-size: 24px;
 }
-.star-ratings {
-    display:flex;
-    justify-content:space-between;
-    margin-left: 1em;
-}
-.star-ratings:hover,
-.star-ratings:focus {
 
+
+.sign-in {
+    margin-top:29px;
 }
 
-.line {
-    border: 0.5px solid black;
-    width: 340px;
-    height: 1px;
-    margin-right: 15px;
-}
-.comment-area {
-    text-align: right;
-}
 
-.submit {
-    background: #16254f;
-    height:42px;
+.custom-file::placeholder {
+    padding-right:5px;
+}
+.custom-file  {
+    width: 270px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(195, 194, 194, 0.7);
+    border: solid 1px #d7d7d7;
+    background-color: #ffffff;
+}
+.form-check {
+    display:inline;
+}
+.terms {
+    margin: 35px 0;
+}
+.terms span {
+    font-size:15px;
+}
+.modal-footer {
+    justify-content:center;
+    flex-direction:column;
+    border: none;
+}
+.modal-footer .btn-primary {
+    background:#16254f;
     width: 200px;
     border-radius: 21px;
+    margin-bottom: 34px;
 }
 
-.numbers {
+
+/* Star rating */
+
+.ratings-title {
+    width: 364px;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 171px;
+    justify-content: space-between;
+}
+.rating span {
     position: relative;
-    text-align: center;
-    font-size: 12px;
-    top: -4px;
-    left: 21px;
+    top: -6px;
+    left: -16px;
+    font-size: 9px;
+    font-weight: 900;
+}
+
+/* Star ratings elemnt */
+
+[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+[type="radio"] + i{
+    cursor:pointer;
+    font-size: 26px;
+}
+[type="radio"]:checked + i:before {
+    content:'\f005';
+    color: #16254f;
+}
+[type="radio"]:checked + i:before{
+    content:'\f005';
+    color: #16254f;
+    font-size: 24px;
+}
+.star {
+    font-size:27px;
+    margin: 0;
+}
+input.star:checked ~ label.star:before {
+    content:'\f005';
+    color:black;
+    transition: all 0.2s;
+}
+
+label.star:before {
+    content:'\f006';
+    font-family: FontAwesome, sans-serif;
 }
