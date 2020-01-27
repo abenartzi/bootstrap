@@ -181,9 +181,8 @@ body {
 
 }
 
-[type="radio"] + i{
+[type="radio"] + label {
     cursor:pointer;
-    font-size: 26px;
 }
 
 .star {
