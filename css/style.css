@@ -78,6 +78,8 @@ body {
     resize:none;
     outline:none;
     height:104px;
+    color:#9b9b9b;
+    font-size:15px;
 }
 
 .custom-file-input {
@@ -126,6 +128,7 @@ body {
     border: solid 1px #d7d7d7;
     background-color: #ffffff;
     color:#666666;
+    font-size:15px;
     padding-right:5px;
 }
 .form-check {
